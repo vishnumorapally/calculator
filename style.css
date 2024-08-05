@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: rgb(77, 77, 199);
 }
 .container{
     display: flex;
@@ -8,13 +9,13 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }   
 .calculator{
-    background-color: black;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     width: 50vw;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -22,15 +23,21 @@ body{
 }
 .header{
     background-color: red;
-    color: white;
+    color: #f2f2f2;
     padding: 20px;
     text-align: center;
     font-size: 30px;
     font-weight: 600;
     border-radius: 10px;
+    display: none;
 }
 .input{
     border: none;
+    /* padding: 0px 40px; */
+}
+button:hover{
+    box-shadow: 5px 5px 5px #d0bfbf;
+    scale: 0.9;
 }
 .input input{
     padding: 20px;
@@ -40,6 +47,7 @@ body{
     outline: none;
     font-size: larger;
     border-radius: 10px;
+    text-align: right;
 }
 .box{
     padding: 20px;  
@@ -59,13 +67,15 @@ body{
 button{
     width: 8vw;
     height: 8vh;
-    color: aliceblue;
-    background-color: orange;
+    color: black;
+    background-color: #e6e6e6;
     font-size: larger;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     outline: none;
     border: none;
 }
+
+
 @media only screen and (min-width: 320px){
     .calculator{
         width: 60vw;
@@ -125,9 +135,7 @@ button{
 
 @media only screen and (min-width: 1024px){
     .calculator{
-        background-color: black;
-        color: white;
-        width: 50vw;
+        width: 30vw;
         border-radius: 20px;
         padding: 20px;
         display: flex;
@@ -135,8 +143,6 @@ button{
         gap: 10px;
     }
     .header{
-        background-color: red;
-        color: white;
         padding: 20px;
         text-align: center;
         font-size: 30px;
@@ -164,7 +170,7 @@ button{
         gap: 20px;
     }
     button{
-        width: 9vw;
+        width: 5vw;
         height: 9vh;
     }
 }
